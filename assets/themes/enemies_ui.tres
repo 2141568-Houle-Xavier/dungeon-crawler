@@ -1,0 +1,14 @@
+[gd_resource type="Theme" load_steps=2 format=2]
+
+[sub_resource type="BitmapFont" id=1]
+
+[resource]
+Label/colors/font_color = Color( 1, 1, 1, 1 )
+Label/colors/font_color_shadow = Color( 1, 1, 1, 1 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 0
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 0
+Label/constants/shadow_offset_y = 0
+Label/fonts/font = SubResource( 1 )
+Label/styles/normal = null

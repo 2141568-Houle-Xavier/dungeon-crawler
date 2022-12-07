@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/Image/Logo.png" type="Texture" id=1]
+[ext_resource path="res://assets/Image/Start.png" type="Texture" id=2]
+[ext_resource path="res://assets/Image/Hover.png" type="Texture" id=3]
+[ext_resource path="res://scripts/MainMenu.gd" type="Script" id=4]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 0.317647, 0.317647, 0.317647, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+anchor_left = 0.233
+anchor_top = 0.079
+anchor_right = 0.784
+anchor_bottom = 0.309
+margin_left = 0.0559998
+margin_top = -0.0240021
+margin_right = -0.112061
+margin_bottom = 0.095993
+texture = ExtResource( 1 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="Panel"]
+anchor_left = 0.368
+anchor_top = 0.373
+anchor_right = 0.66
+anchor_bottom = 0.533
+margin_left = 0.375977
+margin_top = -0.0880127
+margin_right = 0.119995
+margin_bottom = -0.0480194
+texture_normal = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+expand = true
+
+[connection signal="pressed" from="Panel/TextureButton" to="." method="_on_TextureButton_pressed"]

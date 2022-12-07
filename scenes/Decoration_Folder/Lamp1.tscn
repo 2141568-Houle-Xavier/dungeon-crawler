@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/tilemap/FD_Dungeon_Free.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7, 8 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 3, 4 )
+
+[node name="Lamp1" type="StaticBody2D"]
+
+[node name="CollisionShape2D_1" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 3 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 31, 157, 32, 32 )
+
+[node name="CollisionShape2D_2" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -9 )
+shape = SubResource( 2 )
